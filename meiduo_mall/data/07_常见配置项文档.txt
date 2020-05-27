@@ -1,0 +1,7 @@
+官方文档常见配置
+1, Jinja2配置:   https://yiyibooks.cn/xx/Django_1.11.6/topics/templates.html
+2, mysql数据库配置: 	https://yiyibooks.cn/xx/Django_1.11.6/ref/settings.html#std:setting-DATABASES
+3, redis配置:  https://django-redis-chs.readthedocs.io/zh_CN/latest/
+4, 日志配置:  https://yiyibooks.cn/xx/Django_1.11.6/topics/logging.html
+5, 认证用户配置: https://yiyibooks.cn/xx/Django_1.11.6/topics/auth/customizing.html
+6, 静态文件配置: https://yiyibooks.cn/xx/Django_1.11.6/ref/settings.html#std:setting-STATICFILES_DIRS
