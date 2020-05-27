@@ -1,1 +1,26 @@
 INFO 2020-05-27 13:42:10,697 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:28:13,312 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:30:02,441 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:31:37,202 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:32:07,606 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:32:08,373 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:32:11,588 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:33:32,802 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:33:33,603 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:33:36,980 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:33:37,480 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:34:37,982 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:34:38,478 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:34:39,859 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-05-27 22:34:40,377 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:34:49,426 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:41:22,905 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-27 22:41:25,053 basehttp 154 "GET / HTTP/1.1" 200 16286
+INFO 2020-05-27 22:41:58,859 basehttp 154 "GET /static/register.html HTTP/1.1" 200 4680
+WARNING 2020-05-27 22:41:58,983 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:58,988 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:58,999 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:59,008 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:59,019 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:59,028 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
+WARNING 2020-05-27 22:41:59,163 basehttp 154 "GET /static/%7B%7B%20static( HTTP/1.1" 404 1666
