@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
+    'verifications.apps.VerificationsConfig',
+    'contents.apps.ContentsConfig'
 ]
 
 MIDDLEWARE = [
@@ -151,7 +153,14 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+    "code": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
@@ -199,5 +208,12 @@ LOGGING = {
     }
 }
 
-#指定用户模型类
+# 指定用户模型类
 AUTH_USER_MODEL = 'users.User'
+
+# 指定认证后端
+AUTHENTICATION_BACKENDS = ['meiduo_mall.utils.authenticate.MyAuthenticateBackend']
+
+'''
+token = '7fbb0a7dab664dbb99f2d52295d13975'
+'''
