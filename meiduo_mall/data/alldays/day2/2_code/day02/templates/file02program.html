@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1.获取变量的值</h1>
+    <h2>获取整数: {{num + 100}}</h2>
+    <h2>获取字符串: {{str}}</h2>
+    <h2>获取元祖: {{tuple}}, 分开获取:{{ tuple[0] }}, {{ tuple.1 }}</h2>
+    <h2>获取列表: {{list}},分开获取:{{ list.0 }}, {{ list.1 }}</h2>
+    <h2>获取字典: {{dict}},分开获取:{{ dict.name }},{{ dict["age"] }} </h2>
+
+    <h1>2.取出元祖中所有偶数</h1>
+   {% for item in tuple %}
+        {% if item %2 == 0 %}
+            <h2>{{ item }}</h2>
+        {% endif %}
+   {% endfor %}
+
+
+    <h1>3.遍历字典</h1>
+    {% for key in dict %}
+        {# dict.key中的key是一个字符串,  dict[key]中的key是个变量 #}
+        <h2>{{ key }} = {{ dict[key] }}</h2>
+
+    {% endfor %}
+
+
+
+
+</body>
+</html>

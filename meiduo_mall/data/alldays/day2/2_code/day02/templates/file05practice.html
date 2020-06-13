@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {# 遍历列表 #}
+    {# dict中的id值不等于5才遍历 #}
+    {% for dict in my_list if dict.id !=5  %}
+        {# 方式一: #}
+            {#
+            {% if dict.id == 1 %}
+                <li style="background-color: yellow">{{ dict.value }}</li>
+            {% elif dict.id == 2 %}
+                <li style="background-color: green">{{ dict.value }}</li>
+            {% elif dict.id == 3 %}
+                <li style="background-color: red">{{ dict.value }}</li>
+            {% else %}
+                <li style="background-color: purple">{{ dict.value }}</li>
+            {% endif %}
+             #}
+
+          {# 方式二: #}
+
+            {% if loop.index == 1 %}
+                <li style="background-color: yellow">{{ dict.value }}</li>
+            {% elif loop.index == 2 %}
+                <li style="background-color: green">{{ dict.value }}</li>
+            {% elif loop.index == 3 %}
+                <li style="background-color: red">{{ dict.value }}</li>
+            {% else %}
+                <li style="background-color: purple">{{ dict.value }}</li>
+            {% endif %}
+
+
+    {% endfor %}
+
+
+    {# 特殊语法说明: 获取遍历次数 #}
+    {% for item in my_list %}
+        {# loop.index0, 编号从0开始 #}
+        {# loop.index, 编号从1开始 #}
+        <h3>{{ loop.index }}</h3>
+
+    {% endfor %}
+
+
+
+
+</body>
+</html>

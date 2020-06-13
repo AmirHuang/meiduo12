@@ -1,0 +1,17 @@
+记录信息:
+1, APPID 2016092700606753
+2, 支付宝网关  https://openapi.alipaydev.com/gateway.do
+3, 记录账号:
+	买家账号: gsstvx5373@sandbox.com
+	登录密码: 111111
+	支付密码: 111111
+
+
+支付成功之后的返回值:
+?charset=utf-8&out_trade_no=20190609074442000001&method=alipay.trade.page.pay.return&total_amount=7586.00&
+sign=ZOXlEbtPvnEUNymPoEcGcRQ%2BVtlsKJvfcubaSZdEUUmhNJ0UaFP%2Bj%2BW1ak%2F63pLf%2F3rljyDLZrnI3LpJt1BSqiXlxAEDWOFw37j4R3JPqvoEGJSQci2lpXhly1A0rYPgScDAlIqXc5MX3MmzpxaD8eTJ6AloV%2BwQkdvM5YwR%2Fd8jbBN6v3n7TbRdpXrvGaoxmuTPEwQxFfJ5znjPWpefW0EeGTt8vbelKx%2BPDEc0yHo50yDQpnbg4REqUwHkoaeGCbrj%2B4xOu7ooBlri68%2FPCDwQJ7SeHWgQ5y1RyH4HBzSC1rzEuIQLp9mBu7z3eBnTSBTWAoDdrH8jApZaj9cMCg%3D%3D&trade_no=2019060922001468681000045010&auth_app_id=2016092700606753&version=1.0&app_id=2016092700606753&sign_type=RSA2&seller_id=2088102177477334&timestamp=2019-06-09+16%3A08%3A04
+
+需要用到的key	
+sign,
+out_trade_no=20190609074442000001
+trade_no=2019060922001468681000045010
