@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
-    'contents.apps.ContentsConfig'
+    'contents.apps.ContentsConfig',
+    'oauth.apps.OauthConfig'
 ]
 
 MIDDLEWARE = [
@@ -213,6 +214,16 @@ AUTH_USER_MODEL = 'users.User'
 
 # 指定认证后端
 AUTHENTICATION_BACKENDS = ['meiduo_mall.utils.authenticate.MyAuthenticateBackend']
+
+# 用户若是没有登陆,到这来
+LOGIN_URL = "/login/"
+
+# QQ登录
+QQ_CLIENT_ID = '101518219'
+QQ_CLIENT_SECRET = '418d84ebdc7241efb79536886ae95224'
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8000/oauth_callback'
+# QQ_REDIRECT_URI = 'http://192.168.100.128:8000/oauth_callback'
+
 
 '''
 token = '7fbb0a7dab664dbb99f2d52295d13975'

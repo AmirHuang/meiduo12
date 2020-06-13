@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django import http
 import re
+from meiduo_mall.utils.my_login_required import MyLoginRequiredMiXinView
+
 from .models import User
 from django.contrib.auth import authenticate, login, logout
 from django_redis import get_redis_connection
@@ -130,3 +132,19 @@ class LogoutUserView(View):
         response = redirect('/')
         response.delete_cookie("username")
         return response
+
+
+class UserCenterView(MyLoginRequiredMiXinView):
+
+    def get(self, request):
+        # 方式一:
+        # 1,判断用户是否登陆了
+        # if request.user.is_authenticated:
+        #     return render(request, 'user_center_info.html')
+        # else:
+        #     response = redirect("/login")
+        #     response.delete_cookie("username")
+        #     return response
+
+        # 方式二:
+        return render(request, 'user_center_info.html')

@@ -1,0 +1,17 @@
+操作流程:
+1, 第一次clone : https://gitee.com/kobyant/meiduo12.git
+	git clone https://gitee.com/kobyant/meiduo12.git
+
+2, 使用pycharm打开
+	打开meiduo12 下面的 meiduo_mall
+
+3, 以后git pull 即可
+
+如何运行:
+1, 创建数据库
+2, 迁移 
+
+
+问题:
+1, 程序不能右上角绿色箭头运行
+	配置runserver

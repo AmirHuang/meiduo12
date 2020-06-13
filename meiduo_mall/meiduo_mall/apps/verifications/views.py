@@ -70,7 +70,7 @@ class SmsCodeView(View):
         # 保存到redis中
         pipeline = redis_conn.pipeline()
         pipeline.setex("sms_code_%s" % mobile, constants.REDIS_SMS_CODE_EXPIRES, sms_code)
-        pipeline.setex("send_flag_%s" % mobile, constants.REDIS_SEND_FLAG_EXPIRES, True)
+        pipeline.setex("send_flag_%s" % mobile, constants.REDIS_SEND_FLAG_EXPIRES, 1)
         pipeline.execute()
 
         # 4,返回响应
