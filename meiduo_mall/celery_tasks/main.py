@@ -12,7 +12,7 @@ app = Celery('meiduo_mall')
 app.config_from_object('celery_tasks.config', namespace='CELERY')
 
 # 4,注册任务,里面放的是模块中的任务文件
-app.autodiscover_tasks(["celery_tasks.test.tasks", "celery_tasks.sms.tasks"])
+app.autodiscover_tasks(["celery_tasks.test.tasks", "celery_tasks.sms.tasks", "celery_tasks.email.tasks"])
 
 
 # 启动celery任务

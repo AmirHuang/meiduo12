@@ -1011,3 +1011,169 @@ INFO 2020-06-13 21:46:23,273 basehttp 154 "GET /qq/login/?next=/ HTTP/1.1" 200 1
 INFO 2020-06-13 21:46:25,491 basehttp 154 "GET /oauth_callback?code=CF7632FCB15B21C796A5B3D43AA5B90D&state=%2F HTTP/1.1" 301 0
 INFO 2020-06-13 21:46:51,951 basehttp 154 "GET /oauth_callback/?code=CF7632FCB15B21C796A5B3D43AA5B90D&state=%2F HTTP/1.1" 302 0
 INFO 2020-06-13 21:47:17,921 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 09:55:14,113 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 09:55:19,178 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 09:55:19,734 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+WARNING 2020-06-14 09:55:21,282 log 228 Not Found: /favicon.ico
+WARNING 2020-06-14 09:55:21,283 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3905
+INFO 2020-06-14 09:55:23,057 basehttp 154 "GET /info/ HTTP/1.1" 302 0
+INFO 2020-06-14 09:55:23,174 basehttp 154 "GET /login/?next=/info/ HTTP/1.1" 200 3595
+INFO 2020-06-14 09:55:27,018 basehttp 154 "POST /login/?next=/info/ HTTP/1.1" 302 0
+INFO 2020-06-14 09:55:27,076 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 09:55:29,394 basehttp 154 "GET /info/ HTTP/1.1" 200 7796
+WARNING 2020-06-14 09:55:29,671 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 09:55:29,673 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3923
+INFO 2020-06-14 09:55:41,270 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-06-14 09:55:42,789 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 11:19:55,627 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 11:35:01,953 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 11:35:02,036 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2020-06-14 11:35:30,878 basehttp 154 "GET /info/ HTTP/1.1" 200 7796
+WARNING 2020-06-14 11:35:31,089 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 11:35:31,090 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4080
+INFO 2020-06-14 11:35:35,493 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 302 0
+WARNING 2020-06-14 11:35:41,734 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-14 11:35:52,367 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 302 0
+INFO 2020-06-14 11:42:11,613 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-06-14 11:42:13,782 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 11:42:21,517 basehttp 154 "GET /info/ HTTP/1.1" 200 7796
+WARNING 2020-06-14 11:42:21,720 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 11:42:21,721 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4080
+WARNING 2020-06-14 11:42:21,724 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-14 11:42:29,856 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 302 0
+INFO 2020-06-14 11:43:51,852 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 11:43:52,460 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-14 11:43:53,304 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+WARNING 2020-06-14 11:43:53,656 log 228 Not Found: /favicon.ico
+WARNING 2020-06-14 11:43:53,656 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 4062
+INFO 2020-06-14 11:43:56,204 basehttp 154 "GET /login/ HTTP/1.1" 200 3595
+WARNING 2020-06-14 11:43:56,266 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-14 11:43:59,212 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-14 11:43:59,267 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 11:44:30,963 basehttp 154 "GET /info/ HTTP/1.1" 200 7796
+INFO 2020-06-14 11:44:31,025 basehttp 154 "GET /static/images/goods/goods006.jpg HTTP/1.1" 200 6836
+INFO 2020-06-14 11:44:31,036 basehttp 154 "GET /static/images/goods/goods007.jpg HTTP/1.1" 200 3936
+INFO 2020-06-14 11:44:31,046 basehttp 154 "GET /static/js/user_center_info.js HTTP/1.1" 200 3200
+INFO 2020-06-14 11:44:31,057 basehttp 154 "GET /static/images/shop_cart.png HTTP/1.1" 200 1317
+INFO 2020-06-14 11:44:31,064 basehttp 154 "GET /static/images/left_bg.jpg HTTP/1.1" 200 1367
+WARNING 2020-06-14 11:44:31,092 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 11:44:31,092 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4080
+INFO 2020-06-14 11:44:40,105 basehttp 154 "PUT /emails/ HTTP/1.1" 200 29
+INFO 2020-06-14 18:06:06,727 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:06:13,983 basehttp 154 "GET /info/ HTTP/1.1" 200 7812
+INFO 2020-06-14 18:06:14,117 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-14 18:06:14,473 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 18:06:14,474 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4080
+INFO 2020-06-14 18:06:18,627 basehttp 154 "PUT /emails/ HTTP/1.1" 200 29
+INFO 2020-06-14 18:11:54,057 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2020-06-14 18:11:55,278 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:19:08,684 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:22:03,948 basehttp 154 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5MjEyOTE3OCwiZXhwIjoxNTkyMTMwOTc4fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6IjI0Nzc2OTExOUBxcS5jb20ifQ.CL041wwOEeJeAKRlGEEQDylSz96DDADmm5kvGF5USd9IuZuVCJMXeks_ZHq4DvZ1e7KkeAd5KBENVwki9KbT4A HTTP/1.1" 302 0
+INFO 2020-06-14 18:22:04,013 basehttp 154 "GET /info HTTP/1.1" 301 0
+INFO 2020-06-14 18:22:04,254 basehttp 154 "GET /info/ HTTP/1.1" 200 7811
+WARNING 2020-06-14 18:22:04,644 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 18:22:04,644 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4250
+INFO 2020-06-14 18:25:47,098 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:25:49,568 basehttp 154 "GET /info/ HTTP/1.1" 200 7796
+WARNING 2020-06-14 18:25:50,020 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 18:25:50,022 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4250
+INFO 2020-06-14 18:25:55,974 basehttp 154 "PUT /emails/ HTTP/1.1" 200 29
+INFO 2020-06-14 18:25:58,230 basehttp 154 "GET /logout/ HTTP/1.1" 302 0
+INFO 2020-06-14 18:25:58,404 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 18:26:21,127 basehttp 154 "GET /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5MjEzMDM1NSwiZXhwIjoxNTkyMTMyMTU1fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6IiJ9.B4ZU2-A7GDa_7tlL80PyZMmbDB-M4pkORo79qnTPBOnLg3iA0S8SATj54KJXahxHeKAmZC81f-Dc03uzXkIBdQ HTTP/1.1" 302 0
+INFO 2020-06-14 18:26:21,193 basehttp 154 "GET /info/ HTTP/1.1" 302 0
+INFO 2020-06-14 18:26:21,279 basehttp 154 "GET /login/?next=/info/ HTTP/1.1" 200 3595
+INFO 2020-06-14 18:27:31,717 basehttp 154 "POST /login/?next=/info/ HTTP/1.1" 302 0
+INFO 2020-06-14 18:27:31,780 basehttp 154 "GET / HTTP/1.1" 200 24979
+INFO 2020-06-14 18:27:33,362 basehttp 154 "GET /info/ HTTP/1.1" 200 7811
+WARNING 2020-06-14 18:27:33,560 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 18:27:33,563 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4250
+INFO 2020-06-14 18:31:42,406 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-06-14 18:31:48,099 log 228 Not Found: /addresses/
+WARNING 2020-06-14 18:31:48,100 basehttp 154 "GET /addresses/ HTTP/1.1" 404 4229
+INFO 2020-06-14 18:32:26,642 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-06-14 18:32:27,817 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:33:46,226 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2020-06-14 18:33:47,217 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 18:34:06,253 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/urls.py changed, reloading.
+INFO 2020-06-14 18:34:07,515 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:02:33,551 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-06-14 21:02:44,170 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py", line 217, in get
+    addresses = request.user.addresses.filter(is_deleted=False)
+  File "/root/anaconda3531/anaconda3/envs/meiduo_env/lib/python3.6/site-packages/django/utils/functional.py", line 257, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'addresses'
+ERROR 2020-06-14 21:02:44,174 basehttp 154 "GET /addresses/ HTTP/1.1" 500 87644
+INFO 2020-06-14 21:03:26,562 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:09:12,454 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:09:17,730 basehttp 154 "GET /areas/?area_id=220000 HTTP/1.1" 200 541
+INFO 2020-06-14 21:35:30,394 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:35:38,704 basehttp 154 "GET /info/ HTTP/1.1" 200 7811
+INFO 2020-06-14 21:35:38,797 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-14 21:35:39,067 log 228 Not Found: /browse_histories/
+WARNING 2020-06-14 21:35:39,069 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4566
+INFO 2020-06-14 21:35:40,432 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:35:40,477 basehttp 154 "GET /static/js/user_center_site.js HTTP/1.1" 200 13616
+INFO 2020-06-14 21:35:40,526 basehttp 154 "GET /static/images/edit.png HTTP/1.1" 200 1244
+INFO 2020-06-14 21:35:40,981 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:35:57,894 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:35:58,009 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:35:59,041 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:35:59,224 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:35:59,954 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:36:00,086 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:36:00,788 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:36:01,085 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:36:04,682 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:36:04,935 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:46:00,747 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:46:06,099 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:46:06,397 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:46:11,944 basehttp 154 "GET /areas/?area_id=130000 HTTP/1.1" 200 703
+INFO 2020-06-14 21:46:12,893 basehttp 154 "GET /areas/?area_id=130300 HTTP/1.1" 200 461
+WARNING 2020-06-14 21:46:41,482 log 228 Forbidden: /addresses/create/
+WARNING 2020-06-14 21:46:41,491 basehttp 154 "POST /addresses/create/ HTTP/1.1" 403 12
+WARNING 2020-06-14 21:46:44,492 log 228 Forbidden: /addresses/create/
+WARNING 2020-06-14 21:46:44,494 basehttp 154 "POST /addresses/create/ HTTP/1.1" 403 12
+WARNING 2020-06-14 21:47:26,442 log 228 Forbidden: /addresses/create/
+WARNING 2020-06-14 21:47:26,443 basehttp 154 "POST /addresses/create/ HTTP/1.1" 403 12
+WARNING 2020-06-14 21:47:27,162 log 228 Forbidden: /addresses/create/
+WARNING 2020-06-14 21:47:27,163 basehttp 154 "POST /addresses/create/ HTTP/1.1" 403 12
+INFO 2020-06-14 21:49:06,143 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:49:06,546 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:49:07,124 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:49:07,319 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:49:07,782 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8308
+INFO 2020-06-14 21:49:08,263 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:49:41,545 basehttp 154 "GET /areas/?area_id=140000 HTTP/1.1" 200 603
+INFO 2020-06-14 21:49:42,958 basehttp 154 "GET /areas/?area_id=140400 HTTP/1.1" 200 677
+INFO 2020-06-14 21:50:07,765 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 283
+INFO 2020-06-14 21:50:26,649 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8520
+INFO 2020-06-14 21:50:26,998 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:50:39,031 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:51:02,357 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-06-14 21:51:03,215 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:51:06,057 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8520
+INFO 2020-06-14 21:51:06,208 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:51:33,454 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2020-06-14 21:51:34,752 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:51:38,323 basehttp 154 "GET /addresses/ HTTP/1.1" 200 8520
+INFO 2020-06-14 21:51:38,723 basehttp 154 "GET /areas/ HTTP/1.1" 200 1774
+INFO 2020-06-14 21:56:28,991 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-14 21:56:40,679 basehttp 154 "GET /areas/?area_id=130000 HTTP/1.1" 200 703
+INFO 2020-06-14 21:56:41,775 basehttp 154 "GET /areas/?area_id=130400 HTTP/1.1" 200 953
+INFO 2020-06-14 21:56:51,511 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 266
