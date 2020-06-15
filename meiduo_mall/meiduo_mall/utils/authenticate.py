@@ -16,4 +16,7 @@ class MyAuthenticateBackend(ModelBackend):
         except User.DoesNotExist:
             return None
         else:
+            # 3. 校验密码
+            if not user.check_password(password):
+                return None
             return user

@@ -16,4 +16,8 @@ urlpatterns = [
     url(r'^emails/verification/$', views.EmailActiveView.as_view()),
     url(r'^addresses/$', views.AddressView.as_view()),
     url(r'^addresses/create/$', views.AddressCreateView.as_view()),
+    url(r'^addresses/(?P<address_id>\d+)/$', views.AddressUpdateView.as_view()),
+    url(r'^addresses/(?P<address_id>\d+)/default/$', views.AddressDefaultView.as_view()),
+    url(r'^addresses/(?P<address_id>\d+)/title/$', views.AddressTitleView.as_view()),
+    # url(r'^password/$', views.PasswordChangeView.as_view()),
 ]

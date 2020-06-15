@@ -232,6 +232,9 @@ class AddressView(MyLoginRequiredMiXinView):
                 "mobile": address.mobile,
                 "tel": address.tel,
                 "email": address.email,
+                "province_id": address.province_id,
+                "city_id": address.city_id,
+                "district_id": address.district_id
             }
             addresses_list.append(address_dict)
         if address2 == addresses_list:
@@ -283,5 +286,139 @@ class AddressCreateView(MyLoginRequiredMiXinView):
             "mobile": address.mobile,
             "tel": address.tel,
             "email": address.email,
+            "province_id": address.province_id,
+            "city_id": address.city_id,
+            "district_id": address.district_id
         }
         return http.JsonResponse({"code": RET.OK, "address": address_dict})
+
+
+class AddressUpdateView(MyLoginRequiredMiXinView):
+    def put(self, request, address_id):
+        # 1,获取参数
+        dict_data = json.loads(request.body.decode())
+        title = dict_data.get("title")
+        receiver = dict_data.get("receiver")
+        province_id = dict_data.get("province_id")
+        city_id = dict_data.get("city_id")
+        district_id = dict_data.get("district_id")
+        place = dict_data.get("place")
+        mobile = dict_data.get("mobile")
+        tel = dict_data.get("tel")
+        email = dict_data.get("email")
+
+        # 2,校验参数
+        if not all([title, receiver, province_id, city_id, district_id, place, mobile]):
+            return http.HttpResponseForbidden("参数不全")
+
+        # 3,数据入库
+        address = Address.objects.get(id=address_id)
+        address.title = title
+        address.receiver = receiver
+        address.province_id = province_id
+        address.city_id = city_id
+        address.district_id = district_id
+        address.place = place
+        address.mobile = mobile
+        address.tel = tel
+        address.email = email
+        address.save()
+
+        # 4,返回响应
+        address_dict = {
+            "id": address.id,
+            "title": address.title,
+            "receiver": address.receiver,
+            "province": address.province.name,
+            "city": address.city.name,
+            "district": address.district.name,
+            "place": address.place,
+            "mobile": address.mobile,
+            "tel": address.tel,
+            "email": address.email,
+            "province_id": address.province_id,
+            "city_id": address.city_id,
+            "district_id": address.district_id
+        }
+        return http.JsonResponse({"code": RET.OK, "address": address_dict})
+
+    def delete(self, request, address_id):
+        # 1,获取地址对象
+        address = Address.objects.get(id=address_id)
+
+        # 2,修改地址的is_deleted属性,入库
+        address.is_deleted = True
+        address.save()
+
+        # 3,返回响应
+        return http.JsonResponse({"code": RET.OK})
+
+
+class AddressDefaultView(MyLoginRequiredMiXinView):
+    def put(self, request, address_id):
+        # 1,入库
+        request.user.default_address_id = address_id
+        request.user.save()
+
+        # 2,返回
+        return http.JsonResponse({"code": RET.OK})
+
+
+class AddressTitleView(MyLoginRequiredMiXinView):
+    def put(self, request, address_id):
+
+        # 1,获取参数
+        title = json.loads(request.body.decode()).get("title")
+
+        # 2,为空校验参数
+        if not title:
+            return http.HttpResponseForbidden("参数不全")
+
+        # 3,数据入库
+        ret = Address.objects.filter(id=address_id).update(title=title)
+        if ret == 0:
+            return http.HttpResponseForbidden("修改失败")
+
+        # 4,返回响应
+        return http.JsonResponse({"code": RET.OK})
+
+
+# class PasswordChangeView(MyLoginRequiredMiXinView):
+#     def get(self, request):
+#         return render(request, 'user_center_pass.html')
+#
+#     def post(self, request):
+#         # 1,获取参数
+#         old_pwd = request.POST.get("old_pwd")
+#         new_pwd = request.POST.get("new_pwd")
+#         new_cpwd = request.POST.get("new_cpwd")
+#
+#         # 2,校验参数
+#         # 2.1为空校验
+#         if not all([old_pwd, new_pwd, new_cpwd]):
+#             return http.HttpResponseForbidden("参数不全")
+#
+#         # 2,2校验密码格式
+#         if not re.match(r'^[0-9A-Za-z]{8,20}$', old_pwd):
+#             return http.HttpResponseForbidden("旧密码格式有误")
+#
+#         if not re.match(r'^[0-9A-Za-z]{8,20}$', new_pwd):
+#             return http.HttpResponseForbidden("旧密码格式有误")
+#
+#         # 2.3旧密码正确性
+#         if not request.user.check_password(old_pwd):
+#             return http.HttpResponseForbidden("旧密码不正确")
+#
+#         # 2.4两次新密码正确性
+#         if new_pwd != new_cpwd:
+#             return http.HttpResponseForbidden("两次新密码不一致")
+#
+#         # 3,数据入库
+#         request.user.set_password(new_pwd)
+#         request.user.save()
+#
+#         # 4,返回响应,清空session信息
+#         logout(request)
+#         response = redirect('/login')
+#         response.delete_cookie("username")
+#         return response

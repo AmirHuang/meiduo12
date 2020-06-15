@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django import http
-
+from django.core.cache import cache
 from meiduo_mall.utils.response_code import RET
 from .models import Area
 
@@ -13,6 +13,17 @@ class AreaView(View):
 
         # 2,判断area_id是否有值
         if area_id:  # (市,区)
+
+            # TODO 获取市缓存信息
+            sub_data = cache.get("sub_data_%s" % area_id)
+
+            if sub_data:
+                context = {
+                    "code": RET.OK,
+                    "errmsg": "ok",
+                    "sub_data": sub_data
+                }
+                return http.JsonResponse(context)
 
             # 3.1 获取上级区域
             area = Area.objects.get(id=area_id)
@@ -29,10 +40,6 @@ class AreaView(View):
                 }
                 sub_data_list.append(sub_dict)
 
-            sub_data_list2 = list(area.subs.values('id', 'name'))
-            if sub_data_list2 == sub_data_list:
-                print('又是一样的')
-
             # 3.4 数据拼接
             context = {
                 "code": RET.OK,
@@ -44,9 +51,23 @@ class AreaView(View):
                 }
             }
 
+            # TODO 缓存市的信息
+            cache.set("sub_data_%s" % area_id, context["sub_data"], 3600 * 24 * 2)
+
             return http.JsonResponse(context)
 
         else:  # (省)
+
+            # TODO 获取缓存中的省信息
+            areas_list = cache.get("province_list")
+
+            if areas_list:
+                context = {
+                    "code": RET.OK,
+                    "errmsg": "OK",
+                    "provinced_list": areas_list
+                }
+                return http.JsonResponse(context)
 
             # 4.1 查询数据
             areas = Area.objects.filter(parent__isnull=True).all()
@@ -60,15 +81,14 @@ class AreaView(View):
                 }
                 areas_list.append(area_dict)
 
-            res = list(Area.objects.filter(parent__isnull=True).values('id', 'name'))
-            if res == areas_list:
-                print('一样的')
-
             # 4.3 拼接数据
             context = {
                 "code": RET.OK,
                 "errmsg": "OK",
                 "province_list": areas_list
             }
+
+            # TODO 缓存省的信息
+            cache.set('province_list', areas_list, 3600 * 24 * 2)
 
             return http.JsonResponse(context)
