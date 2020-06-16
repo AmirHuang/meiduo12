@@ -383,42 +383,42 @@ class AddressTitleView(MyLoginRequiredMiXinView):
         return http.JsonResponse({"code": RET.OK})
 
 
-# class PasswordChangeView(MyLoginRequiredMiXinView):
-#     def get(self, request):
-#         return render(request, 'user_center_pass.html')
-#
-#     def post(self, request):
-#         # 1,获取参数
-#         old_pwd = request.POST.get("old_pwd")
-#         new_pwd = request.POST.get("new_pwd")
-#         new_cpwd = request.POST.get("new_cpwd")
-#
-#         # 2,校验参数
-#         # 2.1为空校验
-#         if not all([old_pwd, new_pwd, new_cpwd]):
-#             return http.HttpResponseForbidden("参数不全")
-#
-#         # 2,2校验密码格式
-#         if not re.match(r'^[0-9A-Za-z]{8,20}$', old_pwd):
-#             return http.HttpResponseForbidden("旧密码格式有误")
-#
-#         if not re.match(r'^[0-9A-Za-z]{8,20}$', new_pwd):
-#             return http.HttpResponseForbidden("旧密码格式有误")
-#
-#         # 2.3旧密码正确性
-#         if not request.user.check_password(old_pwd):
-#             return http.HttpResponseForbidden("旧密码不正确")
-#
-#         # 2.4两次新密码正确性
-#         if new_pwd != new_cpwd:
-#             return http.HttpResponseForbidden("两次新密码不一致")
-#
-#         # 3,数据入库
-#         request.user.set_password(new_pwd)
-#         request.user.save()
-#
-#         # 4,返回响应,清空session信息
-#         logout(request)
-#         response = redirect('/login')
-#         response.delete_cookie("username")
-#         return response
+class PasswordChangeView(MyLoginRequiredMiXinView):
+    def get(self, request):
+        return render(request, 'user_center_pass.html')
+
+    def post(self, request):
+        # 1,获取参数
+        old_pwd = request.POST.get("old_pwd")
+        new_pwd = request.POST.get("new_pwd")
+        new_cpwd = request.POST.get("new_cpwd")
+
+        # 2,校验参数
+        # 2.1为空校验
+        if not all([old_pwd, new_pwd, new_cpwd]):
+            return http.HttpResponseForbidden("参数不全")
+
+        # 2,2校验密码格式
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', old_pwd):
+            return http.HttpResponseForbidden("旧密码格式有误")
+
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', new_pwd):
+            return http.HttpResponseForbidden("新密码格式有误")
+
+        # 2.3旧密码正确性
+        if not request.user.check_password(old_pwd):
+            return http.HttpResponseForbidden("旧密码不正确")
+
+        # 2.4两次新密码正确性
+        if new_pwd != new_cpwd:
+            return http.HttpResponseForbidden("两次新密码不一致")
+
+        # 3,数据入库
+        request.user.set_password(new_pwd)
+        request.user.save()
+
+        # 4,返回响应,清空session信息
+        logout(request)
+        response = redirect('/login')
+        response.delete_cookie("username")
+        return response
