@@ -235,6 +235,11 @@ EMAIL_HOST_PASSWORD = 'fzdcamavfdugbiba'  # 邮箱授权时获得的密码，非
 EMAIL_FROM = '429771087@qq.com'  # 发件人抬头
 EMAIL_VERIFY_URL = 'http://www.meiduo.site:8000/emails/verification/'
 
+# 指定storage的位置
+BASE_URL = "http://image.meiduo.site:8888/"
+
+# 指定自己的文件存储类
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fdfs.MyFileStorage.MyStorage'
 
 '''
 token = '7fbb0a7dab664dbb99f2d52295d13975'

@@ -2345,3 +2345,125 @@ WARNING 2020-06-22 21:27:27,616 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 544
 WARNING 2020-06-22 21:27:42,258 log 228 Not Found: /group1/M00/00/02/CtM3BVrNtamAdrqPAAAYsg3AvQ86108884
 WARNING 2020-06-22 21:27:42,259 basehttp 154 "GET /group1/M00/00/02/CtM3BVrNtamAdrqPAAAYsg3AvQ86108884 HTTP/1.1" 404 5566
 WARNING 2020-06-22 21:28:47,300 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:21:38,642 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:21:50,504 basehttp 154 "GET / HTTP/1.1" 200 110101
+WARNING 2020-06-22 22:21:50,621 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:23:26,341 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-06-22 22:23:27,395 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:23:31,592 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:23:31,793 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:23:46,434 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:23:46,631 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:23:54,401 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:23:54,512 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+WARNING 2020-06-22 22:24:45,942 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:24:49,945 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:24:50,033 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:34:50,352 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:34:58,105 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:35:02,651 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:35:08,899 basehttp 154 "GET / HTTP/1.1" 200 109949
+WARNING 2020-06-22 22:35:09,574 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:35:15,174 basehttp 154 "GET / HTTP/1.1" 200 109949
+INFO 2020-06-22 22:35:15,355 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-06-22 22:35:15,359 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-22 22:35:15,362 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-06-22 22:35:15,372 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-06-22 22:35:15,373 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-06-22 22:35:15,421 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-22 22:35:15,442 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-06-22 22:35:15,444 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-06-22 22:35:15,470 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-06-22 22:35:15,475 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+WARNING 2020-06-22 22:35:15,527 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-22 22:35:15,550 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-06-22 22:35:15,548 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-06-22 22:35:15,556 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-06-22 22:35:15,607 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2020-06-22 22:35:16,196 log 228 Not Found: /favicon.ico
+WARNING 2020-06-22 22:35:16,196 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5446
+INFO 2020-06-22 22:35:52,608 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-06-22 22:35:53,183 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:35:58,928 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:36:03,435 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-22 22:36:03,474 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-06-22 22:36:03,483 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-06-22 22:36:03,488 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-06-22 22:36:03,509 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-06-22 22:36:03,511 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-22 22:36:03,511 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-22 22:36:03,519 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-06-22 22:36:03,528 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-06-22 22:36:03,528 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-06-22 22:36:03,546 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-22 22:36:03,548 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-06-22 22:36:03,581 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-06-22 22:36:03,631 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-06-22 22:36:03,724 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2020-06-22 22:36:03,736 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+WARNING 2020-06-22 22:36:04,182 log 228 Not Found: /favicon.ico
+WARNING 2020-06-22 22:36:04,183 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5446
+INFO 2020-06-22 22:58:25,861 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:58:45,004 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2020-06-22 22:58:45,512 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:58:50,313 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2020-06-22 22:58:50,863 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:59:08,744 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/apps/goods/views.py changed, reloading.
+INFO 2020-06-22 22:59:09,327 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-22 22:59:33,122 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-23 21:23:39,112 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-23 21:23:53,893 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:23:54,452 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-06-23 21:23:57,809 log 228 Not Found: /favicon.ico
+WARNING 2020-06-23 21:23:57,810 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
+INFO 2020-06-23 21:24:01,052 basehttp 154 "GET /login/ HTTP/1.1" 200 3595
+INFO 2020-06-23 21:24:04,303 basehttp 154 "POST /login/ HTTP/1.1" 302 0
+INFO 2020-06-23 21:24:04,848 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:24:09,853 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:24:15,144 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:24:17,049 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:24:18,371 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:26:57,827 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-06-23 21:27:02,376 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:27:03,866 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:27:03,918 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-06-23 21:27:03,920 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-06-23 21:27:03,934 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-06-23 21:27:03,937 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-23 21:27:03,957 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-23 21:27:03,996 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-06-23 21:27:04,015 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-06-23 21:27:04,036 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-06-23 21:27:04,052 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-06-23 21:27:04,054 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-06-23 21:27:04,062 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-06-23 21:27:04,063 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-23 21:27:04,087 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-06-23 21:27:04,167 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2020-06-23 21:27:17,409 log 228 Not Found: /favicon.ico
+WARNING 2020-06-23 21:27:17,411 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
+INFO 2020-06-23 21:27:21,198 basehttp 154 "GET /list/115/1/ HTTP/1.1" 200 73454
+INFO 2020-06-23 21:27:21,363 basehttp 154 "GET /static/css/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2020-06-23 21:27:21,522 basehttp 154 "GET /static/js/list.js HTTP/1.1" 200 2089
+INFO 2020-06-23 21:27:21,530 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2020-06-23 21:27:31,689 basehttp 154 "GET /list/115/1/ HTTP/1.1" 200 73454
+INFO 2020-06-23 21:27:35,582 basehttp 154 "GET / HTTP/1.1" 200 110101
+WARNING 2020-06-23 21:27:44,180 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-23 21:28:49,279 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-06-23 21:28:49,424 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-06-23 21:28:49,435 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-06-23 21:28:49,446 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-06-23 21:28:49,459 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-06-23 21:28:49,475 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-06-23 21:28:49,482 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-06-23 21:28:49,483 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-06-23 21:28:49,497 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-06-23 21:28:49,504 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-06-23 21:28:49,517 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-06-23 21:28:49,521 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-06-23 21:28:49,557 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-06-23 21:28:49,601 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+WARNING 2020-06-23 21:28:49,615 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-06-23 21:28:49,664 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2020-06-23 21:28:51,716 log 228 Not Found: /favicon.ico
+WARNING 2020-06-23 21:28:51,719 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
