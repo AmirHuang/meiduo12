@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'oauth.apps.OauthConfig',
     'areas.apps.AreasConfig',
     'goods.apps.GoodsConfig',
+    'haystack',
 ]
 
 MIDDLEWARE = [
@@ -240,6 +241,16 @@ BASE_URL = "http://image.meiduo.site:8888/"
 
 # 指定自己的文件存储类
 DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fdfs.MyFileStorage.MyStorage'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
+        'URL': 'http://192.168.100.128:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 50
 
 '''
 token = '7fbb0a7dab664dbb99f2d52295d13975'

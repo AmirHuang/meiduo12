@@ -2467,3 +2467,79 @@ WARNING 2020-06-23 21:28:49,615 basehttp 154 "GET /static/js/axios.min.map HTTP/
 INFO 2020-06-23 21:28:49,664 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
 WARNING 2020-06-23 21:28:51,716 log 228 Not Found: /favicon.ico
 WARNING 2020-06-23 21:28:51,719 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
+INFO 2020-07-01 20:57:22,699 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-01 20:57:34,169 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 20:57:34,338 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-07-01 20:57:34,346 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-07-01 20:57:34,354 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-07-01 20:57:34,358 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-07-01 20:57:34,359 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-07-01 20:57:34,380 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-07-01 20:57:34,496 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-07-01 20:57:34,554 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-07-01 20:57:34,710 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-07-01 20:57:34,807 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-07-01 20:57:34,974 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-07-01 20:57:34,995 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-07-01 20:57:35,010 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-07-01 20:57:35,069 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+WARNING 2020-07-01 20:57:48,317 log 228 Not Found: /favicon.ico
+WARNING 2020-07-01 20:57:48,318 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
+INFO 2020-07-01 21:00:06,768 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-01 21:00:14,236 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:00:14,848 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:00:15,974 basehttp 154 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-07-01 21:00:15,976 basehttp 154 "GET /static/css/main.css HTTP/1.1" 200 39722
+INFO 2020-07-01 21:00:15,983 basehttp 154 "GET /static/js/host.js HTTP/1.1" 200 86
+INFO 2020-07-01 21:00:16,600 basehttp 154 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-07-01 21:00:16,606 basehttp 154 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 97163
+INFO 2020-07-01 21:00:16,609 basehttp 154 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-07-01 21:00:16,612 basehttp 154 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-07-01 21:00:16,613 basehttp 154 "GET /static/images/goods/goods001.jpg HTTP/1.1" 200 5391
+INFO 2020-07-01 21:00:17,181 basehttp 154 "GET /static/js/slide.js HTTP/1.1" 200 1822
+INFO 2020-07-01 21:00:17,188 basehttp 154 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-07-01 21:00:17,308 basehttp 154 "GET /static/js/index.js HTTP/1.1" 200 1832
+INFO 2020-07-01 21:00:17,350 basehttp 154 "GET /static/images/goods/goods002.jpg HTTP/1.1" 200 5377
+INFO 2020-07-01 21:00:17,390 basehttp 154 "GET /static/images/adv01.jpg HTTP/1.1" 200 39831
+INFO 2020-07-01 21:00:17,442 basehttp 154 "GET /static/images/icons.png HTTP/1.1" 200 7740
+INFO 2020-07-01 21:00:21,899 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:00:23,226 basehttp 154 "GET / HTTP/1.1" 200 110101
+WARNING 2020-07-01 21:00:23,665 log 228 Not Found: /favicon.ico
+WARNING 2020-07-01 21:00:23,666 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5652
+INFO 2020-07-01 21:00:24,597 basehttp 154 "GET / HTTP/1.1" 200 110101
+WARNING 2020-07-01 21:00:56,891 log 228 Not Found: /list
+WARNING 2020-07-01 21:00:56,894 basehttp 154 "GET /list HTTP/1.1" 404 5631
+WARNING 2020-07-01 21:01:01,779 log 228 Not Found: /index.html
+WARNING 2020-07-01 21:01:01,781 basehttp 154 "GET /index.html HTTP/1.1" 404 5649
+INFO 2020-07-01 21:01:29,971 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-01 21:01:32,990 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:01:36,104 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:01:37,616 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-01 21:01:38,957 basehttp 154 "GET / HTTP/1.1" 200 110101
+WARNING 2020-07-01 21:01:44,853 log 228 Not Found: /index.html
+WARNING 2020-07-01 21:01:44,853 basehttp 154 "GET /index.html HTTP/1.1" 404 5649
+INFO 2020-07-01 21:04:28,020 basehttp 154 "GET /list/115/1 HTTP/1.1" 301 0
+INFO 2020-07-01 21:04:28,605 basehttp 154 "GET /list/115/1/ HTTP/1.1" 200 72523
+INFO 2020-07-01 21:04:28,688 basehttp 154 "GET /static/css/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2020-07-01 21:04:28,736 basehttp 154 "GET /static/js/list.js HTTP/1.1" 200 2089
+INFO 2020-07-01 21:04:28,789 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+WARNING 2020-07-01 21:04:29,039 log 228 Not Found: /hot/115/
+WARNING 2020-07-01 21:04:29,040 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5643
+WARNING 2020-07-01 21:04:29,048 log 228 Not Found: /carts/simple/
+WARNING 2020-07-01 21:04:29,049 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5658
+INFO 2020-07-01 21:04:31,132 basehttp 154 "GET /list/115/1/?sort=price HTTP/1.1" 200 72521
+WARNING 2020-07-01 21:04:31,300 log 228 Not Found: /carts/simple/
+WARNING 2020-07-01 21:04:31,300 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5658
+WARNING 2020-07-01 21:04:31,306 log 228 Not Found: /hot/115/
+WARNING 2020-07-01 21:04:31,310 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5643
+INFO 2020-07-01 21:04:32,443 basehttp 154 "GET /list/115/1/?sort=hot HTTP/1.1" 200 72519
+WARNING 2020-07-01 21:04:32,562 log 228 Not Found: /hot/115/
+WARNING 2020-07-01 21:04:32,575 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5643
+WARNING 2020-07-01 21:04:32,585 log 228 Not Found: /carts/simple/
+WARNING 2020-07-01 21:04:32,585 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5658
+INFO 2020-07-01 22:55:24,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-01 22:55:33,874 basehttp 154 "GET /list/115/1/?sort=hot HTTP/1.1" 200 72519
+WARNING 2020-07-01 22:55:34,075 log 228 Not Found: /carts/simple/
+WARNING 2020-07-01 22:55:34,075 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5947
+INFO 2020-07-01 22:55:34,197 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 805
+INFO 2020-07-01 22:55:38,315 basehttp 154 "GET /search/?q=japan HTTP/1.1" 200 3700
