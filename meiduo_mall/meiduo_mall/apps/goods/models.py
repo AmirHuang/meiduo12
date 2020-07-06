@@ -163,3 +163,13 @@ class SKUSpecification(BaseModel):
 
     def __str__(self):
         return '%s: %s - %s' % (self.sku, self.spec.name, self.option.value)
+
+
+class GoodVisitCount(BaseModel):
+    category = models.ForeignKey(GoodsCategory, related_name="visit_counts", on_delete=models.CASCADE,
+                                 verbose_name="分类")
+    date = models.DateField(auto_now_add=True, verbose_name="访问的日期")
+    count = models.IntegerField(default=0, verbose_name="数量")
+
+    class Meta:
+        db_table = "tb_goods_visit"

@@ -2543,3 +2543,30 @@ WARNING 2020-07-01 22:55:34,075 log 228 Not Found: /carts/simple/
 WARNING 2020-07-01 22:55:34,075 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5947
 INFO 2020-07-01 22:55:34,197 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 805
 INFO 2020-07-01 22:55:38,315 basehttp 154 "GET /search/?q=japan HTTP/1.1" 200 3700
+INFO 2020-07-06 20:54:10,815 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-06 20:54:29,903 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-06 20:54:30,460 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-07-06 20:54:32,801 log 228 Not Found: /favicon.ico
+WARNING 2020-07-06 20:54:32,801 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5941
+INFO 2020-07-06 20:54:37,719 basehttp 154 "GET /search/?q=iphone HTTP/1.1" 200 3701
+INFO 2020-07-06 20:55:59,332 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-06 20:56:05,461 basehttp 154 "GET /search/?q=iphone HTTP/1.1" 200 3701
+INFO 2020-07-06 20:56:06,084 basehttp 154 "GET /search/?q=iphone HTTP/1.1" 200 3701
+INFO 2020-07-06 21:01:03,939 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-07-06 21:01:15,041 basehttp 154 "GET /search/?q=iphone HTTP/1.1" 200 6737
+INFO 2020-07-06 21:01:31,685 basehttp 154 "GET /search/?q=%E5%8D%8E%E4%B8%BA HTTP/1.1" 200 7894
+WARNING 2020-07-06 21:01:42,234 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-07-06 21:04:39,892 basehttp 154 "GET /search/?q=%E5%8D%8E%E4%B8%BA HTTP/1.1" 200 7894
+WARNING 2020-07-06 21:04:40,159 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-07-06 21:05:06,594 basehttp 154 "GET / HTTP/1.1" 200 110101
+INFO 2020-07-06 21:05:07,309 basehttp 154 "GET /static/js/host.js HTTP/1.1" 304 0
+WARNING 2020-07-06 21:05:08,026 log 228 Not Found: /favicon.ico
+WARNING 2020-07-06 21:05:08,028 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 5941
+INFO 2020-07-06 21:05:12,934 basehttp 154 "GET /search/?q=%E5%8D%8E%E4%B8%BA HTTP/1.1" 200 7894
+INFO 2020-07-06 21:05:12,971 basehttp 154 "GET /static/css/jquery.pagination.css HTTP/1.1" 200 523
+INFO 2020-07-06 21:05:13,127 basehttp 154 "GET /static/js/jquery.pagination.min.js HTTP/1.1" 200 2935
+INFO 2020-07-06 21:06:05,256 basehttp 154 "GET /search/?q=%E5%8D%8E%E4%B8%BA HTTP/1.1" 200 7894
+WARNING 2020-07-06 21:06:05,397 basehttp 154 "GET /static/js/axios.min.map HTTP/1.1" 404 1678
+INFO 2020-07-06 21:18:18,620 basehttp 154 "GET /search/?q=%E5%8D%8E%E4%B8%BA HTTP/1.1" 200 7894
+INFO 2020-07-06 21:25:17,779 autoreload 217 /root/djangoproject/meiduo12/meiduo_mall/meiduo_mall/settings/dev.py changed, reloading.
+INFO 2020-07-06 21:25:19,027 autoreload 597 Watching for file changes with StatReloader
