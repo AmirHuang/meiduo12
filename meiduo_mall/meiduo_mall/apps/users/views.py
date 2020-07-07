@@ -7,6 +7,7 @@ from django.views import View
 from django import http
 import re
 
+from goods.models import SKU
 from meiduo_mall.utils.email import generate_verify_url, decode_token
 from meiduo_mall.utils.my_login_required import MyLoginRequiredMiXinView
 from meiduo_mall.utils.response_code import RET
@@ -422,3 +423,57 @@ class PasswordChangeView(MyLoginRequiredMiXinView):
         response = redirect('/login')
         response.delete_cookie("username")
         return response
+
+
+class UserBrowserHistoryView(MyLoginRequiredMiXinView):
+    def post(self, request):
+        # 1,获取参数
+        dict_data = json.loads(request.body.decode())
+        sku_id = dict_data.get("sku_id")
+        user = request.user
+
+        # 2,校验参数
+        if not sku_id:
+            return http.HttpResponseForbidden("参数不全")
+
+        try:
+            sku = SKU.objects.get(id=sku_id)
+        except Exception as e:
+            return http.HttpResponseForbidden("商品不存在")
+
+        # 3,数据入库(redis)
+        redis_conn = get_redis_connection("history")
+        pipeline = redis_conn.pipeline()
+
+        # 3.1 去重
+        pipeline.lrem("history_%s" % user.id, 0, sku_id)
+
+        # 3.2 存储
+        pipeline.lpush("history_%s" % user.id, sku_id)
+
+        # 3.3 截取
+        pipeline.ltrim("history_%s" % user.id, 0, 4)
+        pipeline.execute()
+
+        # 4,返回响应
+        return http.JsonResponse({"code": RET.OK, "errmsg": "ok"})
+
+    def get(self, request):
+        # 1,获取redis中的数据
+        redis_conn = get_redis_connection("history")
+        sku_ids = redis_conn.lrange("history_%s" % request.user.id, 0, 4)
+
+        # 2,拼接数据
+        sku_list = []
+        for sku_id in sku_ids:
+            sku = SKU.objects.get(id=sku_id)
+            sku_dict = {
+                "id": sku.id,
+                "default_image_url": sku.default_image_url.url,
+                "name": sku.name,
+                "price": sku.price,
+            }
+            sku_list.append(sku_dict)
+
+        # 3,返回
+        return http.JsonResponse({"skus": sku_list})
