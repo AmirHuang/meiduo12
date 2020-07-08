@@ -7,7 +7,7 @@ from django.views import View
 import re
 from django_redis import get_redis_connection
 
-from carts.utils import merge_cookie_redis_cart
+from carts import merge_cookie_redis_cart
 from oauth.utils import generate_sign_openid,decode_sign_openid
 from users.models import User
 from .models import OAuthQQUser
