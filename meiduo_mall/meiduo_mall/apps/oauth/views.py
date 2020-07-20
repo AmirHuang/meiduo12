@@ -7,6 +7,7 @@ from django.views import View
 import re
 from django_redis import get_redis_connection
 # from oauth.utils import generate_sign_openid, decode_sign_openid
+from carts.utils import merge_cookie_redis_cart
 from oauth.utils import generate_sign_openid, decode_sign_openid
 from users.models import User
 from .models import OAuthQQUser
@@ -76,6 +77,7 @@ class OAuthUserView(View):
             # 5,2,返回响应
             response = redirect("/")
             response.set_cookie("username", user.username)
+            response = merge_cookie_redis_cart(request, user, response)
             return response
 
     def post(self, request):
@@ -130,6 +132,7 @@ class OAuthUserView(View):
             # 3.4,返回到首页中
             response = redirect("/")
             response.set_cookie("username", user.username, max_age=3600 * 24 * 2)
+            response = merge_cookie_redis_cart(request, user, response)
             return response
         else:
             # 4.1校验密码正确性
@@ -146,4 +149,5 @@ class OAuthUserView(View):
             # 4.4,返回到首页中
             response = redirect("/")
             response.set_cookie("username", user.username, max_age=3600 * 24 * 2)
+            response = merge_cookie_redis_cart(request, user, response)
             return response

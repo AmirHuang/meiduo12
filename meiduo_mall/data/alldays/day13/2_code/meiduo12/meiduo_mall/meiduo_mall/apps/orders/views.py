@@ -2,8 +2,6 @@ import json
 
 from django.db import transaction
 from django.shortcuts import render
-from django.views import View
-from decimal import Decimal
 from goods.models import SKU
 from meiduo_mall.utils.my_login_required import MyLoginRequiredMiXinView
 from django_redis import get_redis_connection
@@ -11,7 +9,7 @@ from django import http
 from decimal import Decimal
 
 from meiduo_mall.utils.response_code import RET
-from orders.models import OrderInfo, OrderGoods
+from orders import OrderInfo, OrderGoods
 from users.models import Address
 from django.utils import timezone
 from django.core.paginator import Paginator

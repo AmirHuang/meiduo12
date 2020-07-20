@@ -1,6 +1,6 @@
 from django.db import models
 from meiduo_mall.utils.models import BaseModel
-from orders.models import OrderInfo
+from orders import OrderInfo
 
 #1,关联美多和支付宝的订单编号
 class Payment(BaseModel):

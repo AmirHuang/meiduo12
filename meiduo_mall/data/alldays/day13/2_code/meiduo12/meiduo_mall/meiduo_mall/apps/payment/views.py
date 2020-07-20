@@ -4,7 +4,7 @@ from django import http
 from django.views import View
 from meiduo_mall.utils.response_code import RET
 from django.conf import settings
-from orders.models import OrderInfo
+from orders import OrderInfo
 from .models import Payment
 class AlipayView(View):
     def get(self,request,order_id):

@@ -7,6 +7,7 @@ from django.views import View
 from django import http
 import re
 
+from carts.utils import merge_cookie_redis_cart
 from goods.models import SKU
 from meiduo_mall.utils.email import generate_verify_url, decode_token
 from meiduo_mall.utils.my_login_required import MyLoginRequiredMiXinView
@@ -129,6 +130,7 @@ class LoginUserView(View):
         # 4,返回响应
         response = redirect('/')
         response.set_cookie("username", user.username, 3600 * 24 * 2)
+        response = merge_cookie_redis_cart(request, user, response)
         return response
 
 
